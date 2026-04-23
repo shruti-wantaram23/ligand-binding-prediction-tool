@@ -14,9 +14,9 @@ model = joblib.load("model.pkl")
 
 
 def classify_energy(energy):
-    if energy => -9.5:
+    if energy >= -9.5:
         return "Strong"
-    elif energy => -8:
+    elif energy >= -8:
         return "Moderate"
     
 if st.button("Predict"):
